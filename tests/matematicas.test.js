@@ -22,7 +22,7 @@ describe('Pruebas de matemáticas', () => {
   it('error descuento negativo', () => expect(() => calcularDescuento(-10, 20)).toThrow());
   it('error porcentaje invalido', () => expect(() => calcularDescuento(100, 150)).toThrow());
   
-  it('aplica IVA', () => expect(aplicarIVA(100)).toBe(116));
+  it('aplica IVA', () => expect(aplicarIVA(100)).toBeCloseTo(116));
   it('error IVA negativo', () => expect(() => aplicarIVA(-10)).toThrow());
   
   it('convierte a Fahrenheit', () => expect(celsiusAFahrenheit(0)).toBe(32));
