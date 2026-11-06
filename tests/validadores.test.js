@@ -11,7 +11,7 @@ describe('Pruebas de validadores', () => {
   it('cero', () => expect(signoNumero(0)).toBe('cero'));
   
   it('es primo', () => expect(esPrimo(7)).toBe(true));
-  it('no es primo', () => expect(esPrimo(8)).toBe(false));
+  it('no es primo', () => expect(esPrimo(9)).toBe(false));
   it('menor a 2 no es primo', () => expect(esPrimo(1)).toBe(false));
   
   it('fizzbuzz', () => expect(fizzBuzz(15)).toBe('FizzBuzz'));
