@@ -20,7 +20,7 @@ describe('Pruebas de validadores', () => {
   it('numero', () => expect(fizzBuzz(7)).toBe('7'));
   
   it('mayor de edad', () => expect(esMayorDeEdad(18)).toBe(true));
-  it('menor de edad', () => expect(esMayorDeEdad(16)).toBe(false));
+  it('menor de edad', () => expect(esMayorDeEdad(17)).toBe(false));
   it('error edad negativa', () => expect(() => esMayorDeEdad(-1)).toThrow());
   
   it('clasificar nino', () => expect(clasificarEdad(10)).toBe('niño'));
