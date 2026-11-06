@@ -29,7 +29,10 @@ describe('Pruebas de validadores', () => {
   it('clasificar adulto mayor', () => expect(clasificarEdad(70)).toBe('adulto mayor'));
   it('error edad negativa clasificar', () => expect(() => clasificarEdad(-1)).toThrow());
   
-  it('excelente', () => expect(calificacionTexto(9.5)).toBe('Excelente'));
+  it('excelente', () => expect(calificacionTexto(9)).toBe('Excelente'));
+  it('muy bien', () => expect(calificacionTexto(8.5)).toBe('Muy bien'));
+  it('bien', () => expect(calificacionTexto(7)).toBe('Bien'));
+  it('suficiente', () => expect(calificacionTexto(6)).toBe('Suficiente'));
   it('error calificacion alta', () => expect(() => calificacionTexto(11)).toThrow());
   
   it('es bisiesto 400', () => expect(esBisiesto(2000)).toBe(true));
