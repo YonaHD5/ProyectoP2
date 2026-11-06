@@ -11,7 +11,7 @@ describe('Pruebas de validadores', () => {
   it('cero', () => expect(signoNumero(0)).toBe('cero'));
   
   it('es primo', () => expect(esPrimo(7)).toBe(true));
-  it('no es primo', () => expect(esPrimo(8)).toBe(false));
+  it('no es primo', () => expect(esPrimo(9)).toBe(false));
   it('menor a 2 no es primo', () => expect(esPrimo(1)).toBe(false));
   
   it('fizzbuzz', () => expect(fizzBuzz(15)).toBe('FizzBuzz'));
@@ -20,7 +20,7 @@ describe('Pruebas de validadores', () => {
   it('numero', () => expect(fizzBuzz(7)).toBe('7'));
   
   it('mayor de edad', () => expect(esMayorDeEdad(18)).toBe(true));
-  it('menor de edad', () => expect(esMayorDeEdad(16)).toBe(false));
+  it('menor de edad', () => expect(esMayorDeEdad(17)).toBe(false));
   it('error edad negativa', () => expect(() => esMayorDeEdad(-1)).toThrow());
   
   it('clasificar nino', () => expect(clasificarEdad(10)).toBe('niño'));
